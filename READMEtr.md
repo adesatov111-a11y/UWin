@@ -17,10 +17,11 @@ bırakmaz.
 
 **ugilabs** · [ugilabs.com](https://ugilabs.com)
 
+<img width="906" height="753" alt="image" src="https://github.com/user-attachments/assets/00e0fff1-9ca3-418d-8566-88be3fe33936" />
+
 </div>
 
 ---
-<img width="906" height="753" alt="image" src="https://github.com/user-attachments/assets/00e0fff1-9ca3-418d-8566-88be3fe33936" />
 
 ## Neden başka bir USB aracı?
 
