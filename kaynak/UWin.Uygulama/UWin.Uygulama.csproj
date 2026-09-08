@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <RootNamespace>UWin.Uygulama</RootNamespace>
+    <AssemblyName>UWin</AssemblyName>
+    <Product>UWin</Product>
+    <Company>ugilabs</Company>
+    <Authors>ugilabs</Authors>
+    <Copyright>Copyright (c) 2026 ugilabs</Copyright>
+    <!--
+      Surum numarasi exe'nin ozelliklerinde ve gorev yoneticisinde gorunur.
+      GitHub etiketiyle (v1.0.0) ayni tutulmalidir.
+    -->
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <!-- LibraryImport ureteci unsafe kod uretir; P/Invoke icin gerekli. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <UseWinUI>true</UseWinUI>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Varliklar\uwin.ico</ApplicationIcon>
+    <WindowsPackageType>None</WindowsPackageType>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+
+    <!--
+      Tek dosya dagitim: kullanici indirdigi .exe'yi cift tiklar, kurulum yok.
+      WindowsAppSDKSelfContained, WinUI calisma zamanini da ice alir; boylece
+      hedef makinede Windows App Runtime kurulu olmasi gerekmez.
+    -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Test projesi Win32 siralamasini dogrulayabilsin. -->
+    <InternalsVisibleTo Include="UWin.Uygulama.Testler" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      Ikonlar exe'nin icine gomulur. Tek dosya yayininda yanina konan
+      dosyalar cikti klasorune tasinmadigi icin ms-appx yolu sessizce
+      bosa duserdi; gomulu kaynak her iki yayin bicimindede calisir.
+      WithCulture="false": "uwin-64" bir kultur adi sanilmasin.
+    -->
+    <EmbeddedResource Include="Varliklar\uwin-64.png" WithCulture="false" />
+    <EmbeddedResource Include="Varliklar\uwin.ico" WithCulture="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.4.0" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7175" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UWin.Cekirdek\UWin.Cekirdek.csproj" />
+  </ItemGroup>
+
+</Project>

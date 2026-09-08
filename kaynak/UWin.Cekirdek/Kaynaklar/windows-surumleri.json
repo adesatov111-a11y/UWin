@@ -1,0 +1,34 @@
+{
+  "surumler": [
+    {
+      "kimlik": "win11-25h2",
+      "gorunenAd": "Windows 11",
+      "surum": "25H2",
+      "diller": [
+        "tr-TR",
+        "en-US"
+      ],
+      "mimariler": [
+        "x64"
+      ],
+      "tahminiBoyutBayt": 6979321856,
+      "urunSurumKimligi": 3321
+    },
+    {
+      "kimlik": "win10-22h2",
+      "gorunenAd": "Windows 10",
+      "surum": "22H2",
+      "diller": [
+        "tr-TR",
+        "en-US"
+      ],
+      "mimariler": [
+        "x64",
+        "x86"
+      ],
+      "tahminiBoyutBayt": 6158430208,
+      "urunSurumKimligi": 2618
+    }
+  ],
+  "bilinenOzetler": {}
+}

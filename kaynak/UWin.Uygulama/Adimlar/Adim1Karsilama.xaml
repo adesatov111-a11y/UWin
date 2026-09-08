@@ -1,0 +1,115 @@
+<Page
+    x:Class="UWin.Uygulama.Adimlar.Adim1Karsilama"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Spacing="{StaticResource SayfaAraligi}"
+                MaxWidth="{StaticResource SayfaGenisligi}"
+                HorizontalAlignment="Left">
+
+        <StackPanel x:Name="BeklemePaneli"
+                    Orientation="Horizontal"
+                    Spacing="{StaticResource KartAraligi}">
+            <ProgressRing IsActive="True" Width="20" Height="20" />
+            <TextBlock x:Name="BeklemeMetni" VerticalAlignment="Center" Opacity="0.75" />
+        </StackPanel>
+
+        <StackPanel x:Name="RaporPaneli"
+                    Visibility="Collapsed"
+                    Spacing="{StaticResource SayfaAraligi}">
+
+            <!-- Makine kimligi -->
+            <Border Style="{StaticResource KartStili}">
+                <StackPanel Spacing="{StaticResource SatirAraligi}">
+                    <TextBlock x:Name="MakineMetni"
+                               FontSize="17"
+                               FontWeight="SemiBold"
+                               TextWrapping="Wrap" />
+                    <TextBlock x:Name="OzellikMetni"
+                               Style="{StaticResource IkincilStili}"
+                               Opacity="0.7" />
+                </StackPanel>
+            </Border>
+
+            <InfoBar x:Name="SonucKutusu" IsOpen="True" IsClosable="False" />
+
+            <!--
+              Gereksinimler iki sutunda, hepsi acikta. Katlanabilir bir
+              bolumde durduklarinda kullanici tiklamiyor ve bu ekranin
+              tek soyleyecegi seyi hic gormuyordu.
+
+              Her kartin solunda durum rengi bir serit var. Disk listesi
+              zaten ikon+metin satiri kullaniyor; karne de oyle olsaydi
+              iki farkli sey ayni gorunurdu. Serit, "bu bir durum karti"
+              der ve rengi uzaktan okunur.
+            -->
+            <StackPanel Spacing="{StaticResource BolumAraligi}">
+                <TextBlock x:Name="MaddeBasligi" Style="{StaticResource BolumBasligiStili}" />
+
+                <ItemsRepeater x:Name="MaddeListesi">
+                    <ItemsRepeater.Layout>
+                        <UniformGridLayout MinItemWidth="304"
+                                           MinItemHeight="0"
+                                           MinColumnSpacing="12"
+                                           MinRowSpacing="12"
+                                           ItemsStretch="Fill" />
+                    </ItemsRepeater.Layout>
+
+                    <ItemsRepeater.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource DarKartStili}" Padding="0">
+                                <Grid ColumnSpacing="14">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="4" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Durum seridi: kartin tam boyu -->
+                                    <Rectangle Grid.Column="0"
+                                               Fill="{Binding Renk}"
+                                               RadiusX="2"
+                                               RadiusY="2" />
+
+                                    <StackPanel Grid.Column="1"
+                                                Spacing="{StaticResource DarAralik}"
+                                                Padding="0,14,16,14">
+
+                                        <TextBlock Text="{Binding Ad}"
+                                                   FontWeight="SemiBold"
+                                                   TextWrapping="Wrap" />
+
+                                        <TextBlock Text="{Binding Aciklama}"
+                                                   Style="{StaticResource IkincilStili}"
+                                                   Opacity="0.75" />
+
+                                        <TextBlock Text="{Binding NeYapmali}"
+                                                   Visibility="{Binding NeYapmaliGorunurlugu}"
+                                                   FontSize="12"
+                                                   FontWeight="SemiBold"
+                                                   LineHeight="18"
+                                                   TextWrapping="Wrap"
+                                                   Margin="0,4,0,0" />
+
+                                        <Border Visibility="{Binding BiosAyariGorunurlugu}"
+                                                Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                                                CornerRadius="4"
+                                                Padding="8,5"
+                                                Margin="0,2,0,0"
+                                                HorizontalAlignment="Left">
+                                            <TextBlock Text="{Binding BiosAyari}"
+                                                       FontFamily="Consolas"
+                                                       FontSize="12"
+                                                       TextWrapping="Wrap"
+                                                       Opacity="0.85" />
+                                        </Border>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsRepeater.ItemTemplate>
+                </ItemsRepeater>
+            </StackPanel>
+
+        </StackPanel>
+    </StackPanel>
+</Page>

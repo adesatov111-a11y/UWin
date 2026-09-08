@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <!-- LibraryImport ureteci unsafe kod uretir; P/Invoke icin gerekli. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Test projesi, kirilgan regex desenlerini dogrudan dogrulayabilsin. -->
+    <InternalsVisibleTo Include="UWin.Cekirdek.Testler" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      WithCulture=false zorunludur: MSBuild "Metinler.tr.json" adindaki "tr"
+      parcasini kultur kodu sanip dosyayi uydu derlemeye tasir ve ana derlemede
+      kaynak bulunamaz. Bu bayrak dosyalari kultursuz kaynak olarak isaretler.
+    -->
+    <EmbeddedResource Include="Kaynaklar\*.json" WithCulture="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LTRData.DiscUtils.Iso9660" Version="1.0.88" />
+    <PackageReference Include="LTRData.DiscUtils.Udf" Version="1.0.88" />
+    <PackageReference Include="System.Management" Version="10.0.11" />
+  </ItemGroup>
+
+</Project>

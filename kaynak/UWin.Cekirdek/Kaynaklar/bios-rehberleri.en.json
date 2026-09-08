@@ -1,0 +1,433 @@
+{
+  "genel": {
+    "marka": "Genel",
+    "girisTusu": "DELETE or F2",
+    "bootMenuTusu": "F12 or F11",
+    "secureBootNotu": "If you're installing Windows 11, don't touch this setting — leave it on. Only if you're installing Windows 10 and your USB drive doesn't appear in the list at all, try setting the option marked Secure Boot to Disabled.",
+    "adimlar": [
+      {
+        "sira": 1,
+        "baslik": "Plug in the USB drive and shut the computer down",
+        "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+      },
+      {
+        "sira": 2,
+        "baslik": "Turn it on and start pressing DELETE or F2 right away",
+        "aciklama": "Press the power button. The moment the screen lights up, start pressing DELETE or F2 about once a second and keep pressing. You need to be pressing while the your computer's brand logo is on screen. If Windows starts, you were too late: shut down and try again."
+      },
+      {
+        "sira": 3,
+        "baslik": "Recognise the settings screen you land on",
+        "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+      },
+      {
+        "sira": 4,
+        "baslik": "Go to Boot and move the USB to the top",
+        "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+      },
+      {
+        "sira": 5,
+        "baslik": "Save with F10 and exit",
+        "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+      }
+    ]
+  },
+  "markalar": [
+    {
+      "marka": "MSI",
+      "girisTusu": "DELETE",
+      "bootMenuTusu": "F11",
+      "secureBootNotu": "On MSI boards this setting is under Settings > Advanced > Windows OS Configuration. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing DELETE right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing DELETE about once a second and keep pressing. You need to be pressing while the MSI logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Settings > Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Settings > Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "ASUS",
+      "girisTusu": "DELETE or F2",
+      "bootMenuTusu": "F8",
+      "secureBootNotu": "On ASUS boards this setting is under Boot > Secure Boot > OS Type. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing DELETE or F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing DELETE or F2 about once a second and keep pressing. You need to be pressing while the ASUS logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Gigabyte",
+      "girisTusu": "DELETE",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "On Gigabyte boards this setting is under Boot > Secure Boot. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing DELETE right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing DELETE about once a second and keep pressing. You need to be pressing while the Gigabyte logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to BIOS and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach BIOS. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "ASRock",
+      "girisTusu": "F2 or DELETE",
+      "bootMenuTusu": "F11",
+      "secureBootNotu": "On ASRock boards this setting is under the Security tab. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 or DELETE right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 or DELETE about once a second and keep pressing. You need to be pressing while the ASRock logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "HP",
+      "girisTusu": "F10",
+      "bootMenuTusu": "F9",
+      "secureBootNotu": "On HP machines this setting is under Security > Secure Boot Configuration. If you change it, the screen shows a number and asks you to type it — that's normal.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F10 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F10 about once a second and keep pressing. You need to be pressing while the HP logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to System Configuration > Boot Options and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach System Configuration > Boot Options. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Dell",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "On Dell machines this setting is under the Secure Boot heading. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 about once a second and keep pressing. You need to be pressing while the Dell logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot Sequence and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot Sequence. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Lenovo",
+      "girisTusu": "F1 or F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "On Lenovo machines this setting is under Security > Secure Boot. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F1 or F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F1 or F2 about once a second and keep pressing. You need to be pressing while the Lenovo logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Acer",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "On Acer machines Secure Boot can only be changed after a supervisor password is set, under the Security tab. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 about once a second and keep pressing. You need to be pressing while the Acer logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Casper",
+      "girisTusu": "F2 or DELETE",
+      "bootMenuTusu": "F7 or F12",
+      "secureBootNotu": "On Casper machines this setting is under the Security or Boot tab. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 or DELETE right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 or DELETE about once a second and keep pressing. You need to be pressing while the Casper logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Monster",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F7",
+      "secureBootNotu": "On Monster machines this setting is under the Security tab. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 about once a second and keep pressing. You need to be pressing while the Monster logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Toshiba",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "On Toshiba machines this setting is under the Security tab. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 about once a second and keep pressing. You need to be pressing while the Toshiba logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    },
+    {
+      "marka": "Samsung",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F10",
+      "secureBootNotu": "On Samsung machines this setting is under the Boot tab. Don't touch it if you're installing Windows 11.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "Plug in the USB drive and shut the computer down",
+          "aciklama": "Plug the USB drive into the computer. Then shut the computer down completely. Not \"Sleep\" or \"Hibernate\" — it has to really turn off. Wait until the screen goes fully dark."
+        },
+        {
+          "sira": 2,
+          "baslik": "Turn it on and start pressing F2 right away",
+          "aciklama": "Press the power button. The moment the screen lights up, start pressing F2 about once a second and keep pressing. You need to be pressing while the Samsung logo is on screen. If Windows starts, you were too late: shut down and try again."
+        },
+        {
+          "sira": 3,
+          "baslik": "Recognise the settings screen you land on",
+          "aciklama": "A settings screen opens, coloured or grey, in English. This is called the BIOS. The mouse may not work; you move with the arrow keys and choose with Enter. You can't break anything by accident here, because you can leave without saving."
+        },
+        {
+          "sira": 4,
+          "baslik": "Go to Boot and move the USB to the top",
+          "aciklama": "Use the arrow keys to reach Boot. You'll see an ordered list: the computer picks what to start from by reading this order. Move your USB drive's name (it shows the brand) to the top of this list. Moving is usually done with the + and - keys or F5 / F6; the bottom of the screen says which."
+        },
+        {
+          "sira": 5,
+          "baslik": "Save with F10 and exit",
+          "aciklama": "Press F10. It asks \"Save changes?\"; choose Yes and press Enter. The computer restarts and this time starts from the USB drive. If you see the Windows setup screen, everything worked."
+        }
+      ]
+    }
+  ]
+}

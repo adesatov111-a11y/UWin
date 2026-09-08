@@ -1,0 +1,79 @@
+<Application
+    x:Class="UWin.Uygulama.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--
+              Olcu sistemi. Her sayfanin kendi araligini ve kart dolgusunu
+              secmesi, tek tek bakildiginda fark edilmeyen ama ekranlar
+              arasinda gezinirken "bir seyler kaymis" hissi veren bir
+              tutarsizlik uretiyordu. Butun olculer burada durur; sayfalar
+              sayi yazmaz, belirtec kullanir.
+
+              Olcek 4'un katlarindan olusur: 4 / 8 / 12 / 16 / 20 / 24.
+              Ara degerler (14, 18, 22) bilerek yok - bir sonraki gelistirici
+              "burada 18 mi 20 mi" diye dusunmek zorunda kalmasin.
+            -->
+
+            <!-- Aralik -->
+            <x:Double x:Key="SayfaAraligi">24</x:Double>
+            <x:Double x:Key="BolumAraligi">16</x:Double>
+            <x:Double x:Key="KartAraligi">12</x:Double>
+            <x:Double x:Key="SatirAraligi">8</x:Double>
+            <x:Double x:Key="DarAralik">4</x:Double>
+
+            <!--
+              Sayfa genisligi. Metin satiri 80 karakteri gecmesin diye
+              sinirli: daha genis bir satirda goz, satir sonundan bir
+              sonrakinin basina donerken yerini kaybediyor.
+            -->
+            <x:Double x:Key="SayfaGenisligi">640</x:Double>
+
+            <Thickness x:Key="KartDolgusu">20,18,20,18</Thickness>
+            <Thickness x:Key="DarKartDolgusu">16,14,16,14</Thickness>
+
+            <CornerRadius x:Key="KartYuvarlakligi">8</CornerRadius>
+
+            <!-- Tum kartlarin ortak govdesi -->
+            <Style x:Key="KartStili" TargetType="Border">
+                <Setter Property="Background"
+                        Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+                <Setter Property="BorderBrush"
+                        Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="CornerRadius" Value="{StaticResource KartYuvarlakligi}" />
+                <Setter Property="Padding" Value="{StaticResource KartDolgusu}" />
+            </Style>
+
+            <Style x:Key="DarKartStili" TargetType="Border" BasedOn="{StaticResource KartStili}">
+                <Setter Property="Padding" Value="{StaticResource DarKartDolgusu}" />
+            </Style>
+
+            <!-- Tipografi: uc kademe yeterli - baslik, govde, ikincil -->
+            <Style x:Key="BolumBasligiStili" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontWeight" Value="SemiBold" />
+                <Setter Property="TextWrapping" Value="Wrap" />
+            </Style>
+
+            <Style x:Key="GovdeStili" TargetType="TextBlock">
+                <Setter Property="TextWrapping" Value="Wrap" />
+                <Setter Property="LineHeight" Value="21" />
+                <Setter Property="Opacity" Value="0.85" />
+            </Style>
+
+            <Style x:Key="IkincilStili" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextWrapping" Value="Wrap" />
+                <Setter Property="LineHeight" Value="18" />
+                <Setter Property="Opacity" Value="0.6" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

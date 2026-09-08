@@ -1,0 +1,77 @@
+<Page
+    x:Class="UWin.Uygulama.Adimlar.Adim3Kaynak"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Spacing="{StaticResource SayfaAraligi}"
+                MaxWidth="{StaticResource SayfaGenisligi}"
+                HorizontalAlignment="Left">
+
+        <RadioButtons x:Name="KaynakSecimi" SelectionChanged="KaynakDegisti" />
+
+        <!--
+          Indirme yolu. Surum listesi bilerek burada durur: indirme
+          yapilacaksa hangi Windows'un indirilecegi ayri bir ekranda degil,
+          tam indirme dugmesinin yaninda sorulur.
+        -->
+        <StackPanel x:Name="IndirmePaneli"
+                    Spacing="{StaticResource BolumAraligi}"
+                    Visibility="Collapsed">
+
+            <TextBlock x:Name="HangiWindowsMetni" Style="{StaticResource BolumBasligiStili}" />
+            <TextBlock x:Name="OneriMetni" Style="{StaticResource GovdeStili}" Opacity="0.75" />
+
+            <ListView x:Name="SurumListesi"
+                      SelectionMode="Single"
+                      SelectionChanged="SurumSecildi"
+                      MaxHeight="230">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Padding="4,8" Spacing="2">
+                            <TextBlock Text="{Binding TamAd}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding BoyutMetni}" Opacity="0.6" FontSize="12" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackPanel Orientation="Horizontal" Spacing="{StaticResource SatirAraligi}">
+                <Button x:Name="IndirDugmesi"
+                        Height="36"
+                        MinWidth="160"
+                        Click="IndirTiklandi" />
+
+                <Button x:Name="IptalDugmesi"
+                        Height="36"
+                        MinWidth="110"
+                        Visibility="Collapsed"
+                        Click="IptalTiklandi" />
+            </StackPanel>
+
+            <StackPanel x:Name="IlerlemePaneli"
+                          Spacing="{StaticResource SatirAraligi}"
+                          Visibility="Collapsed">
+                <ProgressBar x:Name="IndirmeCubugu" Maximum="100" Height="4" />
+                <TextBlock x:Name="IndirmeDurumu" Style="{StaticResource IkincilStili}" Opacity="0.7" />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Kendi ISO'su -->
+        <StackPanel x:Name="DosyaPaneli"
+                    Spacing="{StaticResource KartAraligi}"
+                    Visibility="Collapsed">
+            <Button x:Name="GozatDugmesi"
+                    Height="36"
+                    MinWidth="160"
+                    Click="GozatTiklandi" />
+
+            <TextBlock x:Name="SecilenDosyaMetni"
+                       Style="{StaticResource IkincilStili}"
+                       Opacity="0.7"
+                       Visibility="Collapsed" />
+        </StackPanel>
+
+        <InfoBar x:Name="DurumKutusu" IsClosable="False" />
+
+    </StackPanel>
+</Page>

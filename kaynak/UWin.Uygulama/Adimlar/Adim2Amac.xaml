@@ -1,0 +1,113 @@
+<Page
+    x:Class="UWin.Uygulama.Adimlar.Adim2Amac"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Spacing="{StaticResource SayfaAraligi}"
+                MaxWidth="{StaticResource SayfaGenisligi}"
+                HorizontalAlignment="Left">
+
+        <TextBlock x:Name="AciklamaMetni" Style="{StaticResource GovdeStili}" Opacity="0.75" />
+
+        <!--
+          Amac secimi. Zorunlu degildir: emin olmayan kullaniciyi bir
+          secime zorlamak, yanlis tavsiye almasina yol acar.
+        -->
+        <ListView x:Name="AmacListesi"
+                  SelectionMode="Single"
+                  SelectionChanged="AmacSecildi">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Padding" Value="12,10" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Spacing="{StaticResource DarAralik}">
+                        <TextBlock Text="{Binding Baslik}" FontWeight="SemiBold" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Altyazi}" Style="{StaticResource IkincilStili}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Secilen amaca gore kurulumda ne yapmasi gerektigi -->
+        <Border x:Name="TavsiyeKutusu"
+                Visibility="Collapsed"
+                Style="{StaticResource KartStili}">
+            <StackPanel Spacing="{StaticResource SatirAraligi}">
+                <TextBlock x:Name="TavsiyeBasligi" Style="{StaticResource BolumBasligiStili}" />
+                <TextBlock x:Name="TavsiyeMetni" Style="{StaticResource GovdeStili}" />
+            </StackPanel>
+        </Border>
+
+        <!--
+          Veri kaybi uyarisi. Bu ekranin asil sebebi budur: kullanici
+          silinecek dosyalari kurulumun ortasinda degil, hala yedek
+          alabilecegi bu anda gormeli.
+        -->
+        <StackPanel x:Name="VeriPaneli"
+                    Spacing="{StaticResource BolumAraligi}"
+                    Visibility="Collapsed">
+
+            <InfoBar x:Name="VeriKutusu"
+                     Severity="Warning"
+                     IsOpen="True"
+                     IsClosable="False" />
+
+            <Border Style="{StaticResource DarKartStili}">
+                <ItemsControl x:Name="KlasorListesi">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnSpacing="12" Margin="0,0,0,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <FontIcon Grid.Column="0"
+                                          Glyph="&#xE8B7;"
+                                          FontSize="14"
+                                          Opacity="0.6"
+                                          VerticalAlignment="Center" />
+
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding Ad}"
+                                           VerticalAlignment="Center" />
+
+                                <TextBlock Grid.Column="2"
+                                           Text="{Binding Ayrinti}"
+                                           Style="{StaticResource IkincilStili}"
+                                           Opacity="0.65"
+                                           VerticalAlignment="Center" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Border>
+
+            <CheckBox x:Name="OnayKutusu" Checked="OnayDegisti" Unchecked="OnayDegisti" />
+        </StackPanel>
+
+        <!-- Tarama surerken -->
+        <StackPanel x:Name="TaramaPaneli"
+                    Orientation="Horizontal"
+                    Spacing="{StaticResource KartAraligi}"
+                    Visibility="Collapsed">
+            <ProgressRing IsActive="True" Width="16" Height="16" />
+            <TextBlock x:Name="TaramaMetni"
+                       VerticalAlignment="Center"
+                       Style="{StaticResource IkincilStili}"
+                       FontSize="13"
+                       Opacity="0.7" />
+        </StackPanel>
+
+        <!-- Baska bilgisayara kurulacaksa buradaki dosyalar tehlikede degil -->
+        <CheckBox x:Name="BaskaBilgisayarKutusu"
+                  Checked="BaskaBilgisayarDegisti"
+                  Unchecked="BaskaBilgisayarDegisti" />
+
+    </StackPanel>
+</Page>

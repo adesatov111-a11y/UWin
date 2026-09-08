@@ -1,0 +1,433 @@
+{
+  "genel": {
+    "marka": "Genel",
+    "girisTusu": "DELETE veya F2",
+    "bootMenuTusu": "F12 veya F11",
+    "secureBootNotu": "Windows 11 kuruyorsan bu ayara hiç dokunma, açık kalsın. Sadece Windows 10 kuruyorsan ve USB belleğin listede hiç görünmüyorsa, Secure Boot yazan ayarı Disabled yapıp dene.",
+    "adimlar": [
+      {
+        "sira": 1,
+        "baslik": "USB belleği tak ve bilgisayarı kapat",
+        "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+      },
+      {
+        "sira": 2,
+        "baslik": "Aç ve hemen DELETE veya F2 tuşuna basmaya başla",
+        "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz DELETE veya F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda bilgisayarının markası yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+      },
+      {
+        "sira": 3,
+        "baslik": "Karşına çıkan ayar ekranını tanı",
+        "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+      },
+      {
+        "sira": 4,
+        "baslik": "Boot bölümüne git ve USB'yi en üste al",
+        "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+      },
+      {
+        "sira": 5,
+        "baslik": "F10 ile kaydet ve çık",
+        "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+      }
+    ]
+  },
+  "markalar": [
+    {
+      "marka": "MSI",
+      "girisTusu": "DELETE",
+      "bootMenuTusu": "F11",
+      "secureBootNotu": "MSI kartlarda bu ayar Settings > Advanced > Windows OS Configuration içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen DELETE tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz DELETE tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda MSI yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Settings > Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Settings > Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "ASUS",
+      "girisTusu": "DELETE veya F2",
+      "bootMenuTusu": "F8",
+      "secureBootNotu": "ASUS kartlarda bu ayar Boot > Secure Boot > OS Type içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen DELETE veya F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz DELETE veya F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda ASUS yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Gigabyte",
+      "girisTusu": "DELETE",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "Gigabyte kartlarda bu ayar Boot > Secure Boot içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen DELETE tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz DELETE tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Gigabyte yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "BIOS bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla BIOS yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "ASRock",
+      "girisTusu": "F2 veya DELETE",
+      "bootMenuTusu": "F11",
+      "secureBootNotu": "ASRock kartlarda bu ayar Security sekmesi içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 veya DELETE tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 veya DELETE tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda ASRock yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "HP",
+      "girisTusu": "F10",
+      "bootMenuTusu": "F9",
+      "secureBootNotu": "HP cihazlarda bu ayar Security > Secure Boot Configuration içinde. Değiştirirsen ekranda bir sayı gösterir ve onu yazmanı ister; bu normaldir.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F10 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F10 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda HP yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "System Configuration > Boot Options bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla System Configuration > Boot Options yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Dell",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "Dell cihazlarda bu ayar Secure Boot başlığı içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Dell yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot Sequence bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot Sequence yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Lenovo",
+      "girisTusu": "F1 veya F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "Lenovo cihazlarda bu ayar Security > Secure Boot içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F1 veya F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F1 veya F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Lenovo yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Acer",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "Acer cihazlarda bu ayarı değiştirebilmek için önce Security sekmesinden bir yönetici şifresi (Supervisor Password) koyman gerekir.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Acer yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Casper",
+      "girisTusu": "F2 veya DELETE",
+      "bootMenuTusu": "F7 veya F12",
+      "secureBootNotu": "Casper cihazlarda bu ayar Security veya Boot sekmesi içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 veya DELETE tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 veya DELETE tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Casper yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Monster",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F7",
+      "secureBootNotu": "Monster cihazlarda bu ayar Security sekmesi içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Monster yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Toshiba",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F12",
+      "secureBootNotu": "Toshiba cihazlarda bu ayar Security sekmesi içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Toshiba yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    },
+    {
+      "marka": "Samsung",
+      "girisTusu": "F2",
+      "bootMenuTusu": "F10",
+      "secureBootNotu": "Samsung cihazlarda bu ayar Boot sekmesi içinde. Windows 11 kuruyorsan dokunma.",
+      "adimlar": [
+        {
+          "sira": 1,
+          "baslik": "USB belleği tak ve bilgisayarı kapat",
+          "aciklama": "USB belleği bilgisayara tak. Sonra bilgisayarı tamamen kapat. \"Uyku\" veya \"Hazırda beklet\" değil, gerçekten kapanmalı. Ekran tamamen sönene kadar bekle."
+        },
+        {
+          "sira": 2,
+          "baslik": "Aç ve hemen F2 tuşuna basmaya başla",
+          "aciklama": "Güç düğmesine bas. Ekran açılır açılmaz F2 tuşuna saniyede bir kez basmaya başla ve basmaya devam et. Ekranda Samsung yazısı görünürken basıyor olman gerekiyor. Windows açılırsa geç kaldın demektir: kapat ve baştan dene."
+        },
+        {
+          "sira": 3,
+          "baslik": "Karşına çıkan ayar ekranını tanı",
+          "aciklama": "Renkli veya gri, İngilizce bir ayar ekranı açılır. Buraya BIOS deniyor. Fare çalışmayabilir; ok tuşlarıyla gezinir, Enter ile seçersin. Buradaki hiçbir şeyi yanlışlıkla bozamazsın, çünkü kaydetmeden çıkabilirsin."
+        },
+        {
+          "sira": 4,
+          "baslik": "Boot bölümüne git ve USB'yi en üste al",
+          "aciklama": "Ok tuşlarıyla Boot yazan yere git. Burada bir sıralama listesi görürsün: bilgisayar hangi cihazdan açılacağını bu sıraya bakarak seçer. USB belleğinin adını (markası yazar) bu listede en üste taşı. Taşımak için genelde + ve - tuşları veya F5 / F6 kullanılır; ekranın altında hangisi olduğu yazar."
+        },
+        {
+          "sira": 5,
+          "baslik": "F10 ile kaydet ve çık",
+          "aciklama": "F10 tuşuna bas. \"Kaydedilsin mi?\" diye sorar; Yes seçip Enter'a bas. Bilgisayar yeniden başlar ve bu sefer USB bellekten açılır. Windows kurulum ekranını görürsen her şey yolunda demektir."
+        }
+      ]
+    }
+  ]
+}

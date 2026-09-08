@@ -1,0 +1,50 @@
+<Page
+    x:Class="UWin.Uygulama.Adimlar.Adim5Onay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Spacing="{StaticResource SayfaAraligi}"
+                MaxWidth="{StaticResource SayfaGenisligi}"
+                HorizontalAlignment="Left">
+
+        <Border Style="{StaticResource KartStili}">
+            <StackPanel Spacing="{StaticResource SatirAraligi}">
+                <TextBlock x:Name="OzetMetni" FontSize="16" TextWrapping="Wrap" />
+                <TextBlock x:Name="KaynakMetni"
+                           Style="{StaticResource IkincilStili}"
+                           FontSize="13"
+                           Opacity="0.65" />
+            </StackPanel>
+        </Border>
+
+        <InfoBar x:Name="VeriUyarisi"
+                 Severity="Warning"
+                 IsOpen="True"
+                 IsClosable="False" />
+
+        <!--
+          Kurtarma araclari. Varsayilan acik: birkac yuz kilobayt yer
+          kaplar ve acilmayan bir Windows karsisinda tek dayanak olabilir.
+        -->
+        <StackPanel Spacing="{StaticResource DarAralik}">
+            <CheckBox x:Name="KurtarmaKutusu"
+                      Checked="KurtarmaDegisti"
+                      Unchecked="KurtarmaDegisti" />
+            <TextBlock x:Name="KurtarmaAciklamasi"
+                       Style="{StaticResource IkincilStili}"
+                       Margin="30,0,0,0" />
+        </StackPanel>
+
+        <!-- USB disi hedeflerde ad yazma kilidi -->
+        <StackPanel x:Name="AdOnayPaneli"
+                    Spacing="{StaticResource SatirAraligi}"
+                    Visibility="Collapsed">
+            <TextBlock x:Name="AdOnayAciklamasi" TextWrapping="Wrap" />
+            <TextBox x:Name="AdOnayKutusu"
+                     MaxWidth="380"
+                     HorizontalAlignment="Left"
+                     TextChanged="AdOnayiDegisti" />
+        </StackPanel>
+
+    </StackPanel>
+</Page>

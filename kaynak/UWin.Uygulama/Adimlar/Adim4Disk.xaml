@@ -1,0 +1,78 @@
+<Page
+    x:Class="UWin.Uygulama.Adimlar.Adim4Disk"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Spacing="{StaticResource SayfaAraligi}"
+                MaxWidth="{StaticResource SayfaGenisligi}"
+                HorizontalAlignment="Left">
+
+        <TextBlock x:Name="GerekenBoyutMetni"
+                   Style="{StaticResource GovdeStili}"
+                   FontSize="13"
+                   Opacity="0.75" />
+
+        <InfoBar x:Name="BosListeKutusu"
+                 Severity="Informational"
+                 IsClosable="False"
+                 Visibility="Collapsed" />
+
+        <ListView x:Name="DiskListesi"
+                  SelectionMode="Single"
+                  SelectionChanged="DiskSecildi"
+                  MaxHeight="360">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="IsEnabled" Value="{Binding SecilebilirMi}" />
+                    <Setter Property="Padding" Value="12,10" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <FontIcon Grid.Column="0"
+                                  Glyph="{Binding Simge}"
+                                  FontSize="18"
+                                  Opacity="0.7"
+                                  VerticalAlignment="Center" />
+
+                        <StackPanel Grid.Column="1" Spacing="2">
+                            <TextBlock Text="{Binding Ad}" FontWeight="SemiBold" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding Ayrinti}"
+                                       Style="{StaticResource IkincilStili}"
+                                       Opacity="0.65" />
+                            <TextBlock Text="{Binding Uyari}"
+                                       Foreground="{ThemeResource SystemFillColorCautionBrush}"
+                                       FontSize="12"
+                                       TextWrapping="Wrap"
+                                       Visibility="{Binding UyariGorunurlugu}" />
+                        </StackPanel>
+
+                        <TextBlock Grid.Column="2"
+                                   Text="{Binding SinifEtiketi}"
+                                   Opacity="0.5"
+                                   FontSize="11"
+                                   VerticalAlignment="Center" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Anahtar ve aciklamasi tek grup: ayri dururken aralari
+             sayfa araligi kadar aciliyor ve ilgisiz gorunuyorlardi. -->
+        <StackPanel Spacing="{StaticResource DarAralik}">
+            <ToggleSwitch x:Name="GelismisAnahtari" Toggled="GelismisDegisti" />
+            <TextBlock x:Name="GelismisAciklamasi"
+                       Style="{StaticResource IkincilStili}"
+                       Opacity="0.55" />
+        </StackPanel>
+
+    </StackPanel>
+</Page>

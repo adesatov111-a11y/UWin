@@ -2,7 +2,7 @@
 
 **Tarih:** 2026-09-07
 **Ürün:** UWin — Windows kurulum USB hazırlama sihirbazı
-**Üretici:** Ugil Labs (ugilabs.com)
+**Üretici:** ugilabs (ugilabs.com)
 **Sürüm kapsamı:** v1
 
 ---
@@ -224,6 +224,6 @@ Mimari v2'yi baştan bekler; v1'de aşağıdakiler hazırlanır ama kullanılmaz
 
 ## 11. Marka ve Dil
 
-- Ürün adı **UWin**, üretici **Ugil Labs** (ugilabs.com).
+- Ürün adı **UWin**, üretici **ugilabs** (ugilabs.com).
 - Arayüz dili sade Türkçe; teknik terim kullanıldığında yanında bir cümlelik açıklaması durur.
 - Görsel dil: WinUI 3 Fluent temeli, koyu/açık tema desteği, sistem vurgu rengine saygı. Sade, boşluğu cömert, tek ekranda tek karar.

@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/kaynak/">
+    <Project Path="kaynak/UWin.Cekirdek/UWin.Cekirdek.csproj" />
+    <Project Path="kaynak/UWin.Uygulama/UWin.Uygulama.csproj" />
+  </Folder>
+  <Folder Name="/testler/">
+    <Project Path="testler/UWin.Cekirdek.Testler/UWin.Cekirdek.Testler.csproj" />
+    <Project Path="testler/UWin.Uygulama.Testler/UWin.Uygulama.Testler.csproj" />
+  </Folder>
+</Solution>
